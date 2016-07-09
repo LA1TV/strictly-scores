@@ -2,9 +2,9 @@
   "name": "strictly-scores",
   "version": "1.0.0",
   "description": "CG, Judging, Scores plus audience votes",
-  "main": "server.js",
   "scripts": {
-    "test": "mocha test/**/*.test.js --require babel-register"
+    "start": "NODE_ENV=production babel-node server.js",
+    "test": "mocha test/**/*.test.js --reporter spec --require babel-register"
   },
   "repository": {
     "type": "git",
