@@ -7,7 +7,7 @@ describe('router', () => {
         request(app)
             .get('/')
             .expect(200)
-            .end((err, res) => {
+            .end((err) => {
                 if (err) return done(err);
                 done();
             });
@@ -17,7 +17,7 @@ describe('router', () => {
         request(app)
             .get('/404')
             .expect(404)
-            .end((err, res) => {
+            .end((err) => {
                 if (err) return done(err);
                 done();
             });
