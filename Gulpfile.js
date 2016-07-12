@@ -3,7 +3,7 @@ import eslint from 'gulp-eslint';
 import mocha from 'gulp-mocha';
 
 gulp.task('lint', function() {
-    return gulp.src('client/app/**/*.js')
+    return gulp.src('**/*.js')
       .pipe(eslint())
       .pipe(eslint.format());
 });
